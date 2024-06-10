@@ -1,0 +1,832 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");@import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+}
+
+html, body{
+    overflow-x: hidden;
+}
+
+body{
+    background: url(images/banner-bg.jpg);
+    background-repeat: no-repeat;
+    font-family: "Roboto",sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+}
+
+.navbar{
+   margin: 30px;
+   background-color: #fff;
+}
+
+.navbar-nav .nav-item a{
+    color: #000;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.hero{
+    margin: 350px;
+    margin-left: 25em;
+    text-align: center;
+    align-items: center;
+}
+
+.hero-small{
+    color: #fff;
+    font-size: 16px;
+}
+
+.hero-big{
+    width: 100%;
+    height: 100px;
+}
+
+.hero-big h1{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-style: italic;
+    color: #fff;
+    font-size: 50px;
+    width: 100%;
+}
+
+.hero-big h1 span{
+    color: #FFB606;
+}
+
+.hero-big h1 .span2{
+    font-style: normal;
+}
+
+.welcome{
+    background-color: #fff;
+    height: 700px;
+    width: 100%;
+    padding: 50px;
+}
+
+.welcome-img img{
+    width: 600px;
+    height: 600px;
+}
+
+.welcome-text{
+    padding: 100px;
+}
+
+.welcome-text h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #131230;
+}
+
+.welcome-text h2 span{
+    color: #FFB606;
+    font-style: italic;
+}
+
+.welcome-text p{
+    font-size: 14px;
+    width: 450px;
+    color: #777;
+}
+
+.welcome-text button{
+    margin-top: 1em;
+    background-color: #FFB606;
+    color: #000;
+    border: 1px solid #FFB606;
+    padding: 10px;
+    width: 150px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.welcome-text button:hover{
+    background-color: transparent;
+    transition: 0.5s ease;
+}
+
+.food {
+    margin-top: -5em;
+    background: url(images/food-bg.png);
+    height: 1400px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+    right: 0;
+}
+
+.food-heading {
+    padding: 150px;
+    margin-left: -6em;
+}
+
+.food-heading h2 {
+    font-family: 'Playfair Display', serif;
+    color: #000;
+    font-weight: 700;
+    font-size: 2.2rem;
+}
+
+.food-heading h2 span {
+    color: #FFB606;
+    font-style: italic;
+}
+
+.food-heading p {
+    width: 420px;
+    color: #777;
+    font-size: 14px;
+}
+
+.foodCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -10em;
+}
+
+.foodCards .row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.foodCards .card {
+    padding: 0;
+    background-color: #F9F9FF;
+    border: none;
+    margin: 20px;
+    width: 400px;
+    text-align: left;
+    border-radius: 0;
+}
+
+.foodCards .card img {
+    width: 366px;
+    height: 100%;
+}
+
+.foodCards .card h3 {
+    color: #131230;
+    font-family: "Playfair Display", serif;
+    text-transform: capitalize;
+    font-size: 20px !important;
+    font-weight: 700;
+    margin: 20px;
+}
+
+.foodCards .card h3 span {
+    color: #FFB606;
+    font-family: 'Poppins', sans-serif;
+    margin-left: 2em;
+}
+
+.foodCards .card p {
+    color: #777;
+    font-size: 14px;
+    margin: 20px;
+    margin-left: 1em;
+    margin-top: -1em;
+}
+
+.foodCards .card:hover{
+    transform: scale(1.05);
+    transition: 0.5s ease;
+    background-color: #FFB606;
+    color: #000;
+}
+
+.foodCards .card:hover span{
+    color: #000;
+    transition: 0.3s ease;
+}
+
+
+.reservation{
+    background: url(images/reservation-bg.jpg);
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+    background-repeat: no-repeat;
+    padding: 200px;
+    padding-left: 15em;
+    text-align: center;
+    color: #fff;
+}
+
+.reservation h2{
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+    font-weight: 700;
+    margin-top: -1.2em;
+}
+
+.reservation p{
+    font-size: 28px;
+    font-style: italic;
+}
+
+.reservation button{
+    margin-top: 1em;
+    background-color: #FFB606;
+    color: #000;
+    border: 1px solid #FFB606;
+    padding: 10px;
+    width: 150px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.reservation button:hover{
+    background-color: transparent;
+    transition: 0.5s ease;
+    color: #FFB606;
+}
+
+.dishes{
+    background-color: #fff;
+    height: 1000px;
+    width: 100%;
+}
+
+.dishes-head{
+    text-align: center;
+    margin-top: 5em;
+}
+
+.dishes-head h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #000;
+}
+
+.dishes-head h2 span{
+    color: #FFB606;
+}
+
+.dishes-head p{
+    font-style: italic;
+    color: #777;
+}
+
+.dishes-list{
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.dishes-list .dish h1{
+    font-family: 'Playfair Display',serif;
+    font-weight: 700;
+}
+
+.dishes-list .dish hr{
+    width: 40%;
+    border-color: #000;
+    margin-top: -1.7em;
+    margin-left: 5em;
+}
+
+.dishes-list .dish h2{
+    margin-left: 2.2em;
+    font-family: 'Playfair Display' , serif;
+    font-weight: 700;
+    color: #000;
+}
+
+.dishes-list .dish span{
+    color: #FFB606;
+}
+
+.dishes-list .dish p{
+    margin-left: 5.5em;
+    width: 420px;
+    color: #777;
+    font-size: 13px;
+}
+
+.dishes-list .dish .price{
+    color: #FFB606;
+    font-size: 25px;
+    margin-left: 3em;
+    font-weight: 700;
+}
+
+.dishes-list .dish .book{
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 5em;
+    cursor: pointer;
+}
+
+.dishes-list .dish .book:hover i{
+    color: #FFB606;
+    margin-left: 5px;
+    transition: 0.5s ease;
+}
+
+.customer{
+    margin-top: 10em;
+    background: url(images/testimonial-bg.jpg);
+    height: 400px;
+    width: 100%;
+}
+
+.overlay{
+    background-color: #000;
+    height: 400px;
+    opacity: 70%;
+}
+
+.customer-says{
+    position: relative;
+    top: -15em;
+    text-align: center;
+    color: #fff;
+}
+
+.customer-says h2{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.customer-says span{
+    color: #FFB606;
+}
+
+.customer-says p{
+    font-style: italic;
+}
+
+.foodUpdate{
+    background-color: #FFFFFF;
+    height: 800px;
+    width: 100%;
+    padding: 70px;
+}
+
+.foodUpdate .update-head{
+    text-align: center;
+    margin-top: 4em;
+}
+
+.foodUpdate .update-head h2{
+    color: #000;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+.foodUpdate .update-head h2 span{
+    color: #FFB606;
+}
+
+.foodUpdate .update-head p{
+    color: #777;
+    font-style: italic;
+    font-size: 14px;
+}
+
+.updateCards{
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.updateCards .card{
+    margin-left: 5px;
+    padding: 20px;
+    width: 380px;
+    border: none;
+}
+
+.updateCards .card img{
+    height: 300px;
+    width: 380px !important;
+}
+
+.updateCards .card h3{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 22px !important;
+    margin-left: 1em;
+}
+
+.updateCards .card p{
+    margin-top: 2em;
+    margin-left: 2em;
+    color: #777;
+    font-size: 14px;
+}
+
+.updateCards .card .read{
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.updateCards .card .read:hover i{
+    color: #FFB606;
+    margin-left: 5px;
+    transition: 0.5s ease;
+}
+
+.updateCards .card:hover{
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: 0.3s ease-in-out;
+}
+
+.book-table {
+    background: url(images/table-bg.jpg);
+    height: 600px;
+    background-repeat: no-repeat;
+    margin-top: 10em;
+    margin-bottom: -3.5em;
+    position: relative;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+
+.book-table .overlay {
+    height: 565px;
+    width: 100%;
+    position: absolute;
+    top: 0.2em;
+    left: 0;
+    background-color: #000;
+    opacity: 80%;
+    z-index: 1; 
+}
+
+.booking-content {
+    text-align: center;
+    margin-top: 8em;
+    color: #fff;
+    opacity: 100% !important;
+    position: relative;
+    z-index: 2; 
+}
+
+.booking-content h2 {
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-weight: 700;
+}
+
+.booking-content h2 span {
+    color: #FFB606;
+}
+
+.booking-content p {
+    font-style: italic;
+    color: #fff;
+    font-weight: 300;
+}
+
+.input-fields {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.input-fields form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    margin-bottom: 1em;
+    margin-top: -2em !important;
+}
+
+.input-group {
+    align-items: center;
+    margin-top: 2em !important;
+}
+
+.input-group input {
+    padding: 10px;
+    padding-left: 2.5em;
+    width: 200px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    color: #000;
+}
+
+.icon {
+    background-color: #fff;
+    border-radius: 4px;
+    z-index: 1;
+    color: #000;
+    position: relative;
+    left: -5.5em;
+    top: 2.3em;
+    font-size: 14px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.button {
+    border: 1px solid #FFB606;
+    background-color: #FFB606;
+    padding: 10px;
+    width: 150px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 2em;
+}
+
+.button:hover {
+    color: #FFB606;
+    background-color: transparent;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+
+footer {
+    background-color: #131230;
+    padding: 60px 0;
+    width: 100%;
+    margin-top: 0;
+    height: 600px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: 5em !important;
+    margin-top: 4em;
+}
+
+footer .col-md-4 {
+    margin-top: 3em;
+    flex: 1 1 30%;
+    min-width: 250px;
+}
+
+footer .col-md-4 h3 {
+    color: #FFB606;
+    font-family: 'Playfair Display', serif;
+    font-weight: 600;
+}
+
+footer .col-md-4 p {
+    color: #777;
+    font-size: 14px;
+}
+
+footer .col-md-4 span {
+    margin-right: 5px;
+}
+
+.copy {
+    background-color: #0D0D27;
+    padding: 15px;
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copy-text {
+    width: 100%;
+    text-align: left;
+    margin-left: 3em;
+    font-size: 14px;
+}
+
+.copy-text p {
+    margin: 0;
+    color: #fff;
+}
+
+.copy-text span{
+    color: #195ec5;
+}
+
+.copy-links{
+    width: 80%;
+    align-items: center !important;
+    margin-left: 3em;
+    margin-right: -10em;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 0.9em;
+}
+
+
+.copy-links i:hover{
+    color: #FFB606;
+    transition: 0.4s ease;
+    cursor: pointer;
+}
+
+@media (max-width: 450px) 
+{
+    body{
+        background-size: cover;
+    }
+
+    .navbar{
+        width: 100%;
+        margin-left: -0.01em !important;
+    }
+
+    .navbar .navbar-toggler{
+        background-color : #FFB606 !important;
+        outline: none;
+    }
+
+    .navbar .navbar-toggler-icon{
+        color: #fff !important;
+    }
+
+    .welcome{
+        height: 1000px;
+    }
+
+    .welcome-img img{
+        height: 300px;
+        width: 300px;
+    }
+
+    .welcome-text p{
+       width: 300px;
+    }
+
+    .food{
+        height: 3000px;
+        background-color: #fff;
+    }
+
+    .food-heading p{
+        width: 300px;
+    }
+
+    .foodCards{
+        justify-content: center !important;
+        align-items: center;
+        padding-left: 2.5em !important;
+    }
+
+    .foodCards .firstCards,
+    .foodCards .lastCards
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .foodCards .card,
+    .foodCards .card img
+    {
+        width: 300px;
+    }
+
+    .reservation{
+        height: 500px;
+        padding-left: 2em;
+    }
+
+    .reservation h2{
+        font-size: 25px;
+       width: 400px;
+       margin-top: 1em;
+    }
+
+    .reservation p{
+        font-size: 14px;
+        text-align: center;
+        width: 400px;
+    }
+
+    .reservation button{
+        transform: scale(0.8);
+        margin-left: 8em;
+    }
+
+    .dishes{
+        margin-top: -5em;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        height: 1500px;
+    }
+
+    .dishes-list .dish p{
+        width: 300px;
+        margin-left: 4.2em;
+        margin-right: -3em;
+    }
+
+    .dishes-list .dish img{
+        width: 700px;
+        height: 300px !important;
+    }
+
+    .dishes-list .col img{
+        height: 200px;
+    }
+
+    .dish{
+        margin-left: -2em !important;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .customer{
+        margin-top: -5em;
+    }
+
+    .customer-says p{
+        font-size: 14px;
+    }
+
+    .foodUpdate{
+        height: 2300px;
+    }
+
+    .updateCards{
+        display: flex;
+       flex-direction: column !important;
+    }
+
+    footer{
+        height: 1000px;
+        padding-left: 0;
+    }
+
+    .footer-content{
+        width: 300px !important;
+    }
+
+    .inputs{
+        display: flex;
+        flex-direction: column;
+        margin-top: 1em !important;
+    }
+
+    .input-fields input{
+        position: relative;
+        bottom: 1em;
+    }
+
+    .button{
+        margin-top: -1em;
+        transform: scale(1.01);
+    }
+
+   .icon{
+    margin-top: -7em;
+    position: relative;
+    left: 2em;
+    z-index: 1;
+   }
+
+   .book-table{
+    margin-top: -0.7em;
+   }
+
+   .copy{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+   }
+
+   .copy-text{
+    font-size: 12px;
+   }
+
+   .copy-links{
+    margin-right: -4em;
+    margin-left: -4em;
+   }
+}
